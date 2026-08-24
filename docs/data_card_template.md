@@ -1,12 +1,10 @@
 # Data Card: Synthetic Preference Alignments
 
-**Domain**: Education / General Knowledge
-**Language**: English
-**License**: CC-BY-4.0
-
-## Intended Use
-Small sample set for unit testing DPO and ORPO loss implementations.
-
-## PII and Safety
-- [x] Contains no PII.
-- [x] Evaluated against standard safety regression prompts.
+**1. Dataset Name**: Synthetic Preference Alignments
+**2. Description**: Small sample set for unit testing DPO and ORPO loss implementations.
+**3. Domain**: Education / General Knowledge
+**4. Language**: English
+**5. License**: CC-BY-4.0
+**6. Intended Use**: Unit testing DPO and ORPO.
+**7. PII**: Contains no PII.
+**8. Safety**: Evaluated against standard safety regression prompts.

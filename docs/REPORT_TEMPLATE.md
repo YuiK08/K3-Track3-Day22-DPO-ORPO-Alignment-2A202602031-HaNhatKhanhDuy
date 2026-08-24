@@ -1,4 +1,5 @@
 # Báo Cáo Thực Hành: Preference Alignment (DPO/ORPO)
+Họ tên: Hà Nhật Khánh Duy MSV: 2A202602031
 
 *Báo cáo kết quả quá trình xử lý dữ liệu, cài đặt thuật toán và đánh giá mô hình.*
 
