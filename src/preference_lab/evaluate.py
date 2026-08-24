@@ -7,9 +7,11 @@ def pairwise_accuracy(examples: list[PreferenceExample], chosen_scores: list[flo
     """Return fraction where chosen score is greater than rejected score."""
     if not examples:
         return 0.0
-    # TODO(student): validate lengths and handle ties explicitly.
+    if len(examples) != len(chosen_scores) or len(examples) != len(rejected_scores):
+        raise ValueError("Lengths of examples and scores must match")
     wins = sum(c > r for c, r in zip(chosen_scores, rejected_scores, strict=False))
-    return wins / len(examples)
+    ties = sum(c == r for c, r in zip(chosen_scores, rejected_scores, strict=False))
+    return (wins + ties * 0.5) / len(examples)
 
 def write_metrics(metrics: dict[str, float], output_dir: str | Path) -> Path:
     path = Path(output_dir)

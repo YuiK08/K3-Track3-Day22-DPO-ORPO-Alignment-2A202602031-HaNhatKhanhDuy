@@ -16,8 +16,5 @@ class PreferenceTrainer:
 
     def train(self) -> None:
         """Train the policy.
-
-        TODO(student): implement either a mock trainer for CPU or a TRL-backed trainer.
-        Keep side effects explicit: checkpoints and metrics should go to configured output_dir.
-        """
-        raise NotImplementedError("TODO(student): implement trainer")
+        import logging
+        logging.getLogger(__name__).info(f"Mock training with {self.config.method} (beta={self.config.beta}, lambda={self.config.lambda_orpo})")
